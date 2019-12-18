@@ -1,4 +1,5 @@
 require 'bundler'
+require 'pry'
 Bundler.require
 
 DB = {
@@ -9,3 +10,4 @@ DB[:conn].results_as_hash = true
 
 require_relative '../lib/tweet.rb'
 require_relative '../lib/tweets_app.rb'
+

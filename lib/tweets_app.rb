@@ -39,6 +39,8 @@ class TweetsApp
     puts ""
     tweet = Tweet.new({'username' => username, 'message' => message})
 
+    tweet.save
+    
     tweets = Tweet.all
   end
 end
